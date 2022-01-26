@@ -15,6 +15,8 @@ def print_color_map():
             print(f'{pair_number} | {get_color_from_pair_number(pair_number)[0]} | {get_color_from_pair_number(pair_number)[1]}')
 
 print_color_map()
+
+#asserting for each color pair
 assert(get_color_from_pair_number(1) == ('White', 'Blue'))
 assert(get_color_from_pair_number(2) == ('White', 'Orange'))
 assert(get_color_from_pair_number(3) == ('White', 'Green'))
