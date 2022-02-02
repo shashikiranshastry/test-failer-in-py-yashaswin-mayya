@@ -3,7 +3,7 @@ import alerter
 def network_alert_stub(celcius):
     # Return 200 for ok
     # Return 500 for not-ok
-    # stub always succeeds and returns 200
+    # stub always succeeds and returns 200.
     ok = float(175)
     if celcius < ok:
         print(f'ALERT: Temperature is {celcius} celcius')
