@@ -17,7 +17,7 @@ def print_color_map():
 
 print_color_map()
 
-#asserting for each color pair
+#asserting for each of 25 color pairs
 assert(get_color_from_pair_number(1) == ('White', 'Blue'))
 assert(get_color_from_pair_number(2) == ('White', 'Orange'))
 assert(get_color_from_pair_number(3) == ('White', 'Green'))
