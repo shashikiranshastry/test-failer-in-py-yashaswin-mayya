@@ -9,8 +9,8 @@ def size(cms):
 
 #Function to encapsulate assertions
 
-def size_check(length_in_cm, size):
-    assert(size(length_in_cm) == size)
+def size_check(length_in_cm, size_id):
+    assert(size(length_in_cm) == size_id)
 
 size_check(37, 'S')
 size_check(40, 'M')
