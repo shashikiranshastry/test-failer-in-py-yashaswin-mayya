@@ -7,10 +7,13 @@ def size(cms):
     else:
         return 'L'
 
-#Size 38 is wrongly assigned to L
+#Function to encapsulate assertions
 
-assert(size(37) == 'S')
-assert(size(40) == 'M')
-assert(size(43) == 'L')
-assert(size(38) == 'S')
+def size_check(length_in_cm, size):
+    assert(size(length_in_cm) == size)
+
+size_check(size(37) == 'S')
+size_check(size(40) == 'M')
+size_check(size(43) == 'L')
+size_check(size(38) == 'S')
 print("All is well (maybe!)\n")
