@@ -17,30 +17,26 @@ def print_color_map():
 
 print_color_map()
 
-#asserting for each of 25 color pairs
-assert(get_color_from_pair_number(1) == ('White', 'Blue'))
-assert(get_color_from_pair_number(2) == ('White', 'Orange'))
-assert(get_color_from_pair_number(3) == ('White', 'Green'))
-assert(get_color_from_pair_number(4) == ('White', 'Brown'))
-assert(get_color_from_pair_number(5) == ('White', 'Slate'))
-assert(get_color_from_pair_number(6) == ('Red', 'Blue'))
-assert(get_color_from_pair_number(7) == ('Red', 'Orange'))
-assert(get_color_from_pair_number(8) == ('Red', 'Green'))
-assert(get_color_from_pair_number(9) == ('Red', 'Brown'))
-assert(get_color_from_pair_number(10) == ('Red', 'Slate'))
-assert(get_color_from_pair_number(11) == ('Black', 'Blue'))
-assert(get_color_from_pair_number(12) == ('Black', 'Orange'))
-assert(get_color_from_pair_number(13) == ('Black', 'Green'))
-assert(get_color_from_pair_number(14) == ('Black', 'Brown'))
-assert(get_color_from_pair_number(15) == ('Black', 'Slate'))
-assert(get_color_from_pair_number(16) == ('Yellow', 'Blue'))
-assert(get_color_from_pair_number(17) == ('Yellow', 'Orange'))
-assert(get_color_from_pair_number(18) == ('Yellow', 'Green'))
-assert(get_color_from_pair_number(19) == ('Yellow', 'Brown'))
-assert(get_color_from_pair_number(20) == ('Yellow', 'Slate'))
-assert(get_color_from_pair_number(21) == ('Violet', 'Blue'))
-assert(get_color_from_pair_number(22) == ('Violet', 'Orange'))
-assert(get_color_from_pair_number(23) == ('Violet', 'Green'))
-assert(get_color_from_pair_number(24) == ('Violet', 'Brown'))
-assert(get_color_from_pair_number(25) == ('Violet', 'Slate'))
-print("All is well (maybe!)\n")
+def test_color_map(test_paid_number, expected_major_colour, expected_minor_color):
+    assert(get_color_from_pair_number(test_paid_number) == (expected_major_colour, expected_minor_color))
+    
+    
+
+#testing each of 25 color pairs
+if __name__ == '__main__':
+    print_color_map()
+    test_color_map(1, 'White', 'Blue')
+    test_color_map(2, 'White', 'Orange')
+    test_color_map(3, 'White', 'Green')
+    test_color_map(4, 'White', 'Brown')
+    test_color_map(5, 'White', 'Slate')
+    test_color_map(6, 'Red', 'Blue')
+    test_color_map(7, 'Red', 'Orange')
+    test_color_map(8, 'Red', 'Green')
+    test_color_map(9, 'Red', 'Brown')
+    test_color_map(10, 'Red', 'Slate')
+    test_color_map(11, 'Black', 'Blue')
+    test_color_map(12, 'Black', 'Orange')
+    test_color_map(13, 'Black', 'Green')
+
+    print("All is well (maybe!)\n")
