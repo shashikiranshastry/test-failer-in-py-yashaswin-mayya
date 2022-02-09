@@ -12,8 +12,9 @@ def size(cms):
 def size_check(length_in_cm, size_id):
     assert(size(length_in_cm) == size_id)
 
-size_check(37, 'S')
-size_check(40, 'M')
-size_check(43, 'L')
-size_check(38, 'S')
-print("All is well (maybe!)\n")
+if __name__ == '__main__':
+    size_check(37, 'S')
+    size_check(40, 'M')
+    size_check(43, 'L')
+    size_check(38, 'S')
+    print("All is well (maybe!)\n")
