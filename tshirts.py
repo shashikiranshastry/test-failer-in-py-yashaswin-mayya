@@ -16,5 +16,5 @@ if __name__ == '__main__':
     size_check(37, 'S')
     size_check(40, 'M')
     size_check(43, 'L')
-    size_check(38, 'S')
+    size_check(38, 'L')
     print("All is well (maybe!)\n")
